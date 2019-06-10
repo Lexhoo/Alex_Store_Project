@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import logo from "./logo.svg";
 import styled from 'styled-components';
 import {ButtonContainer} from './Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPuzzlePiece } from '@fortawesome/free-solid-svg-icons'
+
 
 export default class Navbar extends Component {
     render() {
@@ -21,12 +24,13 @@ export default class Navbar extends Component {
                 <Link to="/" className="nav-link">
                 products
                 </Link>
-                </li>
+                </li> 
                 </ul>
                 <Link to="/card" className="ml-auto">
                 <ButtonContainer>
                     <span className="mr-2">
-                    <i className="fas fa-cart-plus" />
+                    <FontAwesomeIcon icon={ faPuzzlePiece } color="white"/>
+                    
                     </span>
                     my card
                 </ButtonContainer>

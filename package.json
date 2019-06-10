@@ -4,13 +4,17 @@
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "bootstrap": "^4.3.1",
     "eslint": "^5.16.0",
+    "querystringify": "^2.1.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
-    "styled-components": "^4.3.0"
+    "styled-components": "^4.3.0",
+    "tsutil": "^6.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
