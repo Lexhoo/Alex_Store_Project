@@ -2,7 +2,7 @@
 export const storeProducts = [
   {
     id: 1,
-    title: "Google Pixel - Black",
+    title: "Master Roshi",
     img: "img/dragonball-tirelire-master-roshi-plastoy.jpg",
     price: 235,
     company: "GOOGLE",
@@ -14,7 +14,7 @@ export const storeProducts = [
   },
   {
     id: 2,
-    title: "Samsung S7",
+    title: "Gogeta",
     img: "img/figurine-figure-rise-dbz-broly-super-saiyan-god-super-saiyan-gogeta.jpg",
     price: 16,
     company: "SAMSUNG",
@@ -26,7 +26,7 @@ export const storeProducts = [
   },
   {
     id: 3,
-    title: "HTC 10 - Black",
+    title: "Lufyy",
     img: "img/one-piece-figurine-variable-action-heroes-monkey-d-luffy-megahouse.jpg",
     price: 8,
     company: "htc",
@@ -38,7 +38,7 @@ export const storeProducts = [
   },
   {
     id: 4,
-    title: "HTC 10 - White",
+    title: "Super Borso",
     img: "img/one-piece-figurine-variable-action-heroes-portgas-d-ace-megahouse.jpg",
     price: 18,
     company: "htc",
@@ -50,7 +50,7 @@ export const storeProducts = [
   },
   {
     id: 5,
-    title: "HTC Desire 626s",
+    title: "Maître Yoda",
     img: "img/star-wars-episode-v-figurine-16-yoda-sideshow-collectibles.jpg",
     price: 24,
     company: "htc",
@@ -62,7 +62,7 @@ export const storeProducts = [
   },
   {
     id: 6,
-    title: "Vintage Iphone",
+    title: "Chewbaka",
     img: "img/star-wars-movie-milestones-statuette-16-chewbacca-gentle-giant.jpg",
     price: 17,
     company: "apple",
@@ -74,7 +74,7 @@ export const storeProducts = [
   },
   {
     id: 7,
-    title: "Iphone 7",
+    title: "Luke Skywalker",
     img: "img/star-wars-episode-vi-figurine-16-deluxe-luke-skywalker-sideshow-collectibles.jpg",
     price: 30,
     company: "apple",
@@ -86,7 +86,7 @@ export const storeProducts = [
   },
   {
     id: 8,
-    title: "Smashed Iphone",
+    title: "Goldorac",
     img: "img/ufo-robot-grendizer-legacy-of-revoltech-figurine-lr-056-grendizer-kaiyodo-jap.jpg",
     price: 2,
     company: "apple",

@@ -9,11 +9,31 @@ class ProductProvider extends Component {
         products: storeProducts,
         detailProduct: detailProduct
     }
-    handleDetail = () =>{
-        console.log('hi from details');
+    setProducts = () => {
+      let tempProducts = [];
+      storeProducts.forEach(item => {
+        const singleItem = { ...item};
+        tempProducts = [...tempProducts, singleItem];
+      });
+      this.setState(() => {
+        return { products: tempProducts };
+      });
+    };
+
+    getItem = (id) =>{
+      const product = this.state.products.find(item => item.id === id);
+      return product;
+    };
+
+
+    handleDetail = (id) =>{
+     const product = this.getItem(id);
+     this.setState(()=> {
+       return {detailProduct: product}
+     })
     }
-    addToCard = () =>{
-        console.log('hi from add to card');
+    addToCard = id =>{
+        console.log(`hi from add to card.id is ${id}`);
     }
     render() {
         return(        
