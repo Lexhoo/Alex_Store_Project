@@ -26,6 +26,8 @@ export default class Product extends Component {
                             disable={inCart ? true : false}
                             onClick={() => {
                                value.addToCart(id);
+                               value.openModal(id);
+                               
                             }}
                           >
                             {inCart ? (<p className="text-capitalize mb-0" disable>in Cart</p>) : (<FontAwesomeIcon icon={faAirFreshener} />

@@ -12,7 +12,7 @@ export default class ProductList extends Component {
               <div className="container">
                 <Title name="My fav'" title="Collection" />
                 
-                <div className="row"/>
+                <div className="row">
                 <ProductConsumer>
                   {value => {
                     return value.products.map(product =>{
@@ -20,6 +20,7 @@ export default class ProductList extends Component {
                     })
                   }}
                 </ProductConsumer>
+                </div>
             </div>
             </div>
           </React.Fragment>

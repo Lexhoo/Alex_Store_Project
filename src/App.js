@@ -5,8 +5,9 @@ import './App.css';
 import Navbar from './Navbar';
 import ProductList from './ProductList';
 import Details from './Details';
-import Card from './Card';
+import Cart from './Cart';
 import Default from './Default';
+import Modal from './Modal';
 
 class App extends Component {
   render() {
@@ -16,9 +17,10 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={ProductList} />
           <Route path="/details" component={Details} />
-          <Route path="/card" component={Card} />
+          <Route path="/card" component={Cart} />
           <Route component={Default} />   
         </Switch>
+        <Modal />
       </React.Fragment>
     );
   }
