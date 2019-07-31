@@ -5,7 +5,7 @@ import './App.css';
 import Navbar from './Navbar';
 import ProductList from './ProductList';
 import Details from './Details';
-import Cart from './Cart';
+import Cart from './Cart/Cart';
 import Default from './Default';
 import Modal from './Modal';
 
@@ -17,7 +17,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={ProductList} />
           <Route path="/details" component={Details} />
-          <Route path="/card" component={Cart} />
+          <Route path="/cart" component={Cart} />
           <Route component={Default} />   
         </Switch>
         <Modal />
