@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { ProductConsumer } from './context'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAirFreshener } from '@fortawesome/free-solid-svg-icons'
+import { faShoppingBag } from '@fortawesome/free-solid-svg-icons'
 import PropTypes from 'prop-types';
 
 export default class Product extends Component {
@@ -30,8 +30,8 @@ export default class Product extends Component {
                                
                             }}
                           >
-                            {inCart ? (<p className="text-capitalize mb-0" disable>in Cart</p>) : (<FontAwesomeIcon icon={faAirFreshener} />
-                            )}
+                            <FontAwesomeIcon icon={faShoppingBag} />
+                            
                         </button>
                     </div>)}
                     
@@ -42,7 +42,7 @@ export default class Product extends Component {
                             {title}
                         </p>
                         <h5 className="text-blue font-italic mb-0">
-                            <span className="mr-1">$</span>
+                            <span className="mr-1">€</span>
                             {price}
                         </h5>
                     </div>
@@ -78,18 +78,18 @@ const ProductWrapper = styled.div`
         box-shadow:2px 2px 5px 0px rgba(0,0,0,0.2);
     }
 .card-footer {
-    background:rgba(247, 247, 247);
+    background: rgba(244, 247, 247);
     }
 }
 .img-container {
-    position:relative;
-    overflow:hidden;
+    position: relative;
+    overflow: hidden;
 }
 .card-img-top {
     transition: all 1s linear;
 }
 .img-container:hover .card-img-top{
-    transformation:scale(1.2);
+    transform: scale(1.6);
 }
 .card-btn {
     position: absolute;
@@ -102,7 +102,7 @@ const ProductWrapper = styled.div`
     font-size: 1.4rem;
     border-radius: 0.5rem 0 0 0;
     transform: translate(100%, 100%);
-    transition: all 1s linear;
+    transition: all 0.3s linear;
 }
 .img-container:hover .card-btn {
     transform: translate(0, 0);

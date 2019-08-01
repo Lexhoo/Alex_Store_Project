@@ -4,7 +4,8 @@ import logo from "./logo.svg";
 import styled from 'styled-components';
 import {ButtonContainer} from './Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPuzzlePiece } from '@fortawesome/free-solid-svg-icons'
+
+import { faShoppingBasket } from '@fortawesome/free-solid-svg-icons';
 
 
 export default class Navbar extends Component {
@@ -12,9 +13,6 @@ export default class Navbar extends Component {
         return (
             <NavWrapper className="navbar navbar-expand-sm bg-primary navbar-dark px-sm-5">
             
-            {/*https://www.iconfinder.com/icons/1243689/call_phone_icon
-            Creative Commons (Attribution 3.0 Unported);
-            https://www.iconfinder.com/Makoto_msk */}
                 <Link to='/'>
                    <img src={logo} alt="store"
                    className="navbar-brand" />
@@ -28,11 +26,11 @@ export default class Navbar extends Component {
                 </ul>
                 <Link to="/cart" className="ml-auto">
                 <ButtonContainer>
-                    <span className="mr-2">
-                    <FontAwesomeIcon icon={ faPuzzlePiece } color="white"/>
+                    <span className="mr-6">
+                    <FontAwesomeIcon icon={faShoppingBasket} size="1x" color="white" />
                     
                     </span>
-                    my card
+                    mon panier
                 </ButtonContainer>
                 </Link>
             </NavWrapper>
